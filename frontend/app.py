@@ -13,8 +13,7 @@ SUGGESTIONS = [
     "How to improve sleep quality?",
 ]
 
-BACKEND_URL = "http://0.0.0.0:8000/query/"  # Replace with your backend URL
-
+BACKEND_URL = "http://34.22.243.84:8000/query/"  # Replace with your backend URL
 
 def main():
     initialise_chat()
