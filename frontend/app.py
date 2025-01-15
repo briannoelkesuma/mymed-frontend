@@ -38,14 +38,13 @@ def initialise_chat():
 
 def display_suggestions():
     """Display suggestions for general and specific questions."""
-    if st.session_state.suggestions_visible and not st.session_state.chat_history:
-        st.markdown("### Need some ideas? Try these:")
-        
-        st.markdown("###### General Questions")
-        display_suggestion_buttons(GENERAL_QUESTIONS, key_prefix="general")
-        
-        st.markdown("###### More Specific Questions")
-        display_suggestion_buttons(SPECIFIC_QUESTIONS, key_prefix="specific")
+    st.markdown("### Need some ideas? Try these:")
+    
+    st.markdown("###### General Questions")
+    display_suggestion_buttons(GENERAL_QUESTIONS, key_prefix="general")
+    
+    st.markdown("###### More Specific Questions")
+    display_suggestion_buttons(SPECIFIC_QUESTIONS, key_prefix="specific")
 
 
 def display_suggestion_buttons(questions, key_prefix):
